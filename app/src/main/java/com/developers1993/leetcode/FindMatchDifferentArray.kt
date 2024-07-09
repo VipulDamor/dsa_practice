@@ -23,16 +23,16 @@ class FindMatchDifferentArray {
         val keys = mutableMapOf<String,Boolean>() // creating new object which will add more space
         arr1.forEach { item1 ->//O(n)
             if (!keys.contains(item1)){//O(1)
-                keys[item1] = true//O(n)
+                keys[item1] = true//O(1) average
             }
         }
-        arr2.forEach { item2-> //O(n)
-            if (keys.contains(item2)){//O(1)
+        arr2.forEach { item2-> //O(m)
+            if (keys.contains(item2)){//O(1) average
                 return true//O(1)
             }
         }
         return false//O(1)
-        //O(n)+O(1)+O(n)+O(n)+O(1)+O(1)
+        //O(n)+O(1)+O(1)+O(m)+O(1)+O(1)
         //O(n)
 
     }
