@@ -34,4 +34,8 @@ class FindMatchDifferentArray {
         //O(n)
 
     }
+
+    fun solution3(arr1: Array<String>, arr2: Array<String>): Boolean {
+        return arr2.any { item -> item in arr1 }
+    }
 }
