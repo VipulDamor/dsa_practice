@@ -1,5 +1,7 @@
 package com.developers1993.leetcode
 
+import android.os.Build.VERSION_CODES.O
+
 class FindMatchDifferentArray {
 
     //O(n^2) time complexity
@@ -18,17 +20,20 @@ class FindMatchDifferentArray {
 
     //O(n) complexity
     fun solution2(arr1: Array<String>, arr2: Array<String>):Boolean {
-        val keys = mutableMapOf<String,Boolean>()
-        arr1.forEach { item1 ->
-            if (!keys.contains(item1)){
-                keys[item1] = true
+        val keys = mutableMapOf<String,Boolean>() // creating new object which will add more space
+        arr1.forEach { item1 ->//O(n)
+            if (!keys.contains(item1)){//O(1)
+                keys[item1] = true//O(n)
             }
         }
-        arr2.forEach { item2->
-            if (keys.contains(item2)){
-                return true
+        arr2.forEach { item2-> //O(n)
+            if (keys.contains(item2)){//O(1)
+                return true//O(1)
             }
         }
-        return false
+        return false//O(1)
+        //O(n)+O(1)+O(n)+O(n)+O(1)+O(1)
+        //O(n)
+
     }
 }
