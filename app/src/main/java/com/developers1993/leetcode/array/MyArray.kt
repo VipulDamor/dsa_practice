@@ -55,6 +55,6 @@ fun main() {
     println("before :  "+arr.size())
     arr.remove(1)
 
-    println("after : "+arr.get(1))
+   // println("after : "+arr.get(1))
     println(arr.size())
 }
