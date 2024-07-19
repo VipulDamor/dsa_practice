@@ -2,7 +2,7 @@ package com.developers1993.leetcode
 
 class ReverseString {
     fun reverseString(s: String){
-        if (s.isNotEmpty()){
+        if (s.isEmpty()){
             println("hmm that's not a valid string")
             return
         }
