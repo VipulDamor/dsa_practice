@@ -49,6 +49,20 @@ fun PrimeNumber.improvedIsPrimeNumber(num: Int): Boolean {
     if (num == 2) return true
     if (num % 2 == 0) return false
 
+    /**
+     * Explanation:
+     * 3..Math.sqrt(num.toDouble()).toInt():
+     * 3.. creates a range starting from 3.
+     * Math.sqrt(num.toDouble()): This part calculates the square root of the number num.
+     * num.toDouble() converts num (which is an Int) to a Double because Math.sqrt() expects a Double.
+     * Math.sqrt(num.toDouble()) computes the square root of the number.
+     * .toInt() converts the result of the square root (a Double) back to an Int, because ranges (3..) work with integers in Kotlin.
+     * So, 3..Math.sqrt(num.toDouble()).toInt() creates a range from 3 to the integer part of the square root of num.
+     * step 2:
+     * This indicates that the loop should increment by 2 on each iteration. Normally, ranges like 3..n increment by 1, but step 2 means we skip every second number, i.e., i = 3, 5, 7, 9, 11, ....
+     * This is important because, after checking 2 separately (since it's the only even prime), we know all other prime candidates must be odd, so we skip even numbers.
+     * **/
+
     for (i in 3..sqrt(num.toDouble()).toInt() step 2){
         if (num % i == 0){
             return false
