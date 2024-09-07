@@ -1,6 +1,4 @@
-package com.developers1993
-
-import java.util.Locale
+package com.developers1993.leetcode
 
 /***
  * A palindrome is something that reads the same forward and backward
