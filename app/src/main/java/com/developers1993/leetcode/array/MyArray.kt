@@ -16,9 +16,6 @@ class MyArray {
         throwExceptionIfRequired(position)
         return data[position]
     }
-
-
-
     fun remove(position: Int) : Any? {
         throwExceptionIfRequired(position)
         val item = data[position]
