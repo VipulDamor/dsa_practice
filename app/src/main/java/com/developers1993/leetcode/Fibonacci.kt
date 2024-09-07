@@ -12,7 +12,6 @@ class Fibonacci {
     fun generateFibonacci(number: Int) {
         var first = 0
         var second = 1
-        var fibonaci = 1;
 
         if (number >= 1) {
             print("$first ")
@@ -45,6 +44,6 @@ class Fibonacci {
 
 fun main() {
     val fib = Fibonacci()
-    fib.generateFibonacci(10)
-    fib.printFibRec(10)
+    fib.generateFibonacci(1)
+    fib.printFibRec(1)
 }
