@@ -26,7 +26,7 @@ class PalindromeNumber {
         return  (input.isNotEmpty() && input.reversed() == input)
     }
 
-    //other approach
+    //other approach Two-pointer technique
     fun isPalindromeStringAlternative(str: String): Boolean {
         val lowerStr = str.lowercase()  // Convert to lowercase for case-insensitivity
         var left = 0
