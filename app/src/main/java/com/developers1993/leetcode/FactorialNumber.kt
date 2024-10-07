@@ -33,8 +33,8 @@ class FactorialNumber {
 
 fun main() {
     val factorial = FactorialNumber()
-    //val factorialValue = factorial.findFactorial(5)
-    val factorialValue = factorial.findFactorial2(5)
+    val factorialValue = factorial.findFactorial(5)
+    //val factorialValue = factorial.findFactorial2(5)
     print(factorialValue)
 
 }

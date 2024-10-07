@@ -8,13 +8,13 @@ class PalindromeNumber {
 
     //for integer
     fun isPalindrome(number: Int) :Boolean{
-        if (number<0) return false
+        if (number < 0) return false
 
         var original = number
         var reversed = 0
 
         while (original!=0){
-            val lastDigit = original%10
+            val lastDigit = original % 10
             reversed = reversed * 10 + lastDigit
             original /= 10
         }
