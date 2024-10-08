@@ -64,7 +64,7 @@ Want to help? 🤩 Feel free to:
 
 Questions? Reach out to me!  
 💼 [GitHub Profile](https://github.com/VipulDamor)  
-📧 [vipuldamor@example.com](mailto:vipuldamor@example.com)
+📧 [vipuldamor@gmail.com](mailto:vipuldamor@gmail.com)
 
 ---
 
